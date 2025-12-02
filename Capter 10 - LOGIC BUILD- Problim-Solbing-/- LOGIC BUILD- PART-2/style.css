@@ -1,0 +1,172 @@
+/* Basic page reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #4f46e5; /* violet-600 */
+  --accent-2: #06b6d4; /* teal-400 */
+  --muted: #6b7280;
+  --success: #10b981;
+  --danger: #ef4444;
+  --glass: rgba(255, 255, 255, 0.6);
+}
+
+/* Container */
+#leap_years {
+  width: 100%;
+  max-width: 520px;
+  margin: 36px auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), var(--card));
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 30px rgba(20, 20, 50, 0.06);
+  border: 1px solid rgba(74, 85, 104, 0.06);
+}
+
+/* Form row */
+#leap_years form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+#leap_years label {
+  font-weight: 600;
+  color: #111827;
+  min-width: 60px;
+}
+#leap_years input[type='number'] {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  outline: none;
+  transition: box-shadow 0.18s, border-color 0.18s, transform 0.08s;
+  font-size: 15px;
+}
+#leap_years input[type='number']::placeholder {
+  color: #9ca3af;
+}
+#leap_years input[type='number']:focus {
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.08);
+  transform: translateY(-1px);
+}
+button {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 200px;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.25);
+}
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/* Result card */
+.result {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  display: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.02),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(15, 23, 42, 0.03);
+  margin-bottom: 16px;
+}
+.result h2 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--accent);
+  letter-spacing: 0.3px;
+}
+.result .h4 {
+  margin: 0;
+  background: rgba(6, 182, 212, 0.08);
+  color: var(--accent-2);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Info list (.infu) styling */
+.infu {
+  padding: 14px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(246, 248, 255, 0.6)
+  );
+  border: 1px dashed rgba(79, 70, 229, 0.06);
+}
+.infu h4 {
+  color: #111827;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Each paragraph becomes a labeled item with icon and muted text */
+.infu p {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.01);
+  margin-bottom: 8px;
+}
+
+/* small icon box before each p */
+.infu p::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    var(--accent),
+    var(--accent-2)
+  );
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.12);
+}
+
+/* Muted details inside p (if you add <span class="muted">) */
+.infu p .muted {
+  color: var(--muted);
+  font-size: 13px;
+  display: block;
+  margin-top: 6px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>- LOGIC BUILD- PART-2</title>
+</head>
+
+<body>
+
+  <div id="leap_years">
+    <form action="">
+      <label for="years">Years</label>
+      <input id="years" type="number" placeholder="Enter year e.g. 2024">
+      <button id="button">Check Leap Year</button>
+    </form>
+    <div class="result">
+      <h2 class="ture">ture</h2>
+      <h4 class="scroe"></h4>
+    </div>
+    <div class="infu">
+      <h4>Year details</h4>
+      <p>
+        This year is a leap year if it's divisible by 4.
+        (Every 4 years is a leap year except centuries not divisible by 400.)
+      </p>
+      <p>
+        Century rule: years like 1900 are not leap years but 2000 is.
+        (Because 2000 % 400 === 0.)
+      </p>
+      <p>
+        Days in this year:366 days if leap, otherwise 365.
+        (February has 29 days in a leap year.)
+      </p>
+      <p>
+        Example: 2024 is a leap year; 2023 is not.
+        (Try typing 2024 into the field.)
+      </p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
