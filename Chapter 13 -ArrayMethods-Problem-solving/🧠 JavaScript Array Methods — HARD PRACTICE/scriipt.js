@@ -49,14 +49,6 @@ const scoresFristNumber = scores.find(n => n < 33);
 const findIndexs = scores.findIndex(n => n < 33);
 console.log(scoresFristNumber);
 
-// 7
-// 8
-// 9
-// 10
-// 11
-// 12
-// 13
-
 // Extra Problems
 
 const students = [
@@ -89,3 +81,4 @@ console.log(nameLength);
 const number = [1, [2, 3], [4, [5, 6]]];
 const numEven = number.flat(2).filter(n => n % 2 === 0);
 console.log(numEven);
+//
