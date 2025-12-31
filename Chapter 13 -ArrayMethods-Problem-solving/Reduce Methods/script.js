@@ -44,3 +44,37 @@ console.log(maxValue);
 const numberIns = [100, 200, 300, 400];
 const result = numberIns.reduce((acc, num) => acc + num, 50);
 console.log(result);
+
+// Extra Problems 🧠 Reduce Practice — 10 Problems
+
+//? Qs: 1 : সব বিজোড় সংখ্যার যোগফল বের কর
+// Ans:
+const numbers2 = [1, 2, 3, 4, 5, 6, 7];
+const oddNumberSum = numbers2.reduce(
+  (acc, currv) => (currv % 2 === 1 ? acc + currv : acc),
+  0
+);
+console.log(oddNumberSum);
+
+//? Qs: 2 :
+// Ans:
+const numbers3 = [45, 12, 88, 3, 19];
+const samllNumber = numbers3.reduce(
+  (acc, currv) => (currv < acc ? currv : currv, 0)
+);
+console.log(samllNumber);
+
+//? Qs: 3 :
+// Ans:
+//? Qs: 4 :
+// Ans:
+//? Qs: 5 :
+// Ans:
+//? Qs: 6 :
+// Ans:
+//? Qs: 7 :
+// Ans:
+//? Qs: 8 :
+// Ans:
+//? Qs: 9 :
+// Ans:
