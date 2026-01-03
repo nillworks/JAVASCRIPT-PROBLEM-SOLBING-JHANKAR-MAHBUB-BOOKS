@@ -34,15 +34,3 @@ if (!!array) {
 } else {
   console.log('itz false');
 }
-
-// Not get Problems solve
-
-// Ans:
-//? Qs: 1 :
-// Ans:
-//? Qs: 1 :
-// Ans:
-//? Qs: 1 :
-// Ans:
-//? Qs: 1 :
-// Ans:
