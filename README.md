@@ -1,7 +1,4 @@
-- [x] Not complets all problems.
 
-
-<br/>
 
 # 📘 JavaScript Problem Solving – Chapter Wise Practice
 
@@ -64,9 +61,5 @@ Arrow function, template string, spread, destructuring, let/const & modern conce
 **Shipon Roy (nillworks)**  
 JavaScript Learner • Problem Solver • GitHub Active Contributor
 
----
-
-## ⭐ Support  
-If this repo helps you, please consider giving a **Star ⭐** — It motivates me a lot!
 
 
